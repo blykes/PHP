@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!----Brian Lykes---->
+<html lang="en">
+<head>
+	<title>Database Search</title>
+	<meta name="generator" content="BBEdit 11.6" />
+</head>
+<body>
+<h1>Visits Search</h1>
+<form action="searchscript.php" method="POST">
+Choose Search type: <br/>
+<select name="type">
+	<option value="page_name">Page Name
+	<option value="visit_date">Date
+	<option value="visit_time">Time
+	<option value="previous_page">Previous Page
+	<option value="request_method">Request Method
+	<option value="remote_host">Remote Host
+	<option value="remote_port">Port
+</option>
+</select>
+<br />
+Enter Search Term:<br />
+<input name="term" type="text" size="40">
+<br />
+<input type="submit" name="submit" value="Search">  
+</form>
+</body>
+</html>
